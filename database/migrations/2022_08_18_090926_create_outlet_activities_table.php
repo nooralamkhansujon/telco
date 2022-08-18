@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('outlet_activities', function (Blueprint $table) {
             $table->id();
+            $table->unsignedInteger('outlet_id');
+            $table->datetime('visit_date');
             $table->timestamps();
         });
     }
