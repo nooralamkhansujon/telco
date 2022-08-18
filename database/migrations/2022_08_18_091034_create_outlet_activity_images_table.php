@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('outlet_activity_images', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('outle_activity_id');
+            $table->string('outlet_image');
             $table->timestamps();
         });
     }

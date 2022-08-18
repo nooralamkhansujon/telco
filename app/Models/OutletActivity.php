@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class OutletActivity extends Model
 {
     use HasFactory;
+    protected $fillable = ['outlet_id','visit_date'];
 }
