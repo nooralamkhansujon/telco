@@ -42,7 +42,7 @@
                   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                       <img src="{{ asset('assets/img/user2-160x160.jpg') }}" class="user-image img-circle shadow"
                           alt="User Image">
-                      <span class="d-none d-md-inline">{{ auth()->user()->name }}</span>
+                      <span class="d-none d-md-inline">nooralam</span>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
                       <!-- User image -->
@@ -72,7 +72,7 @@
                       <!-- Menu Footer-->
                       <li class="user-footer">
                           <a href="#" class="btn btn-default btn-flat">Profile</a>
-                          <form action="{{ route('logout') }}" method="post">
+                          <form action="#" method="post">
                               @csrf
                               <button href="#" type="submit" class="btn btn-default btn-flat float-end" id="logout">Sign
                                   out</button>

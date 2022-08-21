@@ -9,4 +9,8 @@ class Outlet extends Model
 {
     use HasFactory;
     protected $fillable = ['name','latitude','longitude'];
+
+    public function outlet_activities(){
+        return $this->hasMany(OutletActivity::class,'outlet_id','id');
+    }
 }
